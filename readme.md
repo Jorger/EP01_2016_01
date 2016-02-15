@@ -11,6 +11,13 @@ Repositorio asignatura Electiva Profesional I
 * Publicar en GitHub: https://youtu.be/D6VFF8Rsyao
 * Desplegar aplicaciones en GitHub: http://drastudio.github.io/url-generator/
 
+
+### Grabación de Clases.
+
+08 de Febrero de 2016
+
+https://youtu.be/jj2krT5e690
+
 ### Autor
 Jorge Rubaino
 
