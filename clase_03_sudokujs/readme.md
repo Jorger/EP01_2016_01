@@ -1,4 +1,4 @@
-# SudokuJS
+# Librería SudokuJS
 
 Librería que permite la creación de los elementos bases (semillas) de un Sudoku
 
