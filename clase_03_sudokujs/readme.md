@@ -18,6 +18,10 @@ Para hacer el llamado a un nuevo sudoku se invocará el método ```creaSudoku()`
 * **Tamaño del sudoku:** Mínimo 2, Máximo 5.
 * **Dificultad:** 1 - Fácil, 2 - Medio, 3 - Difícil.
 
+```javascript
+creaSudoku(dimension, nivel);
+```
+
 Si no se envía parámetro alguno, se creará un sudoku de 3x3 con una dificultad Fácil (1)
 
 Además de entregar el sudoku con sus semillas, también se retorna la solución del mismo.
