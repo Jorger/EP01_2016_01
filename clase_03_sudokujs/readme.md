@@ -6,17 +6,17 @@ Librería que permite la creación de los elementos bases (semillas) de un Sudok
 
 Para hacer uso de la librería, se deberá asociar el archivo .js al documento html que hará uso de la misma.
 
-* sudokujs.min.js: Para despliegue
-* sudokujs.js: Para desarrollo
+* [sudokujs.min.js]: Para despliegue
+* [sudokujs.js]: Para desarrollo
 
-```
+```html
 <script src = "js/sudokujs.min.js"></script>
 ```
 
-Para hacer el llamado a un nuevo sudoku se invocará el método ```creaSudoku()``` el cual espara dos parámetros:
+Para hacer el llamado a un nuevo sudoku se invocará el método ```creaSudoku()``` el cual espare dos parámetros:
 
-* Tamaño del sudoku (2 - 5)
-* Dificultad: 1 - Fácil, 2 - Medio, 3 - Difícil.
+* **Tamaño del sudoku:** Mínimo 2, Máximo 5.
+* **Dificultad:** 1 - Fácil, 2 - Medio, 3 - Difícil.
 
 Si no se envía parámetro alguno, se creará un sudoku de 3x3 con una dificultad Fácil (1)
 
@@ -29,9 +29,11 @@ var newSudoku = sudokuJS.creaSudoku();
 var sudoku = newSudoku.sudokujs;
 var solve = newSudoku.respuesta;
 ```
-La propiedad ```respuesta``` retorna una array con la respuesta del Sudoku.
+La propiedad ```respuesta``` retorna una Matriz con la respuesta del Sudoku.
 
 La librería ha sido utilizada para la creación del juego.
+
+![Adivinando](https://dl.dropboxusercontent.com/u/181689/sudokugif.gif)
 
 ### Enlaces.
 
@@ -47,3 +49,5 @@ License
 ----
 MIT
 [@ostjh]:https://twitter.com/ostjh
+[sudokujs.js]:https://github.com/Jorger/EP01_2016_01/blob/master/clase_03_sudokujs/js/sudokujs.js
+[sudokujs.min.js]:https://github.com/Jorger/EP01_2016_01/blob/master/clase_03_sudokujs/js/sudokujs.min.js
