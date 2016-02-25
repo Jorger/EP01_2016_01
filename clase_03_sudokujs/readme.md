@@ -25,9 +25,9 @@ Además de entregar el sudoku con sus semillas, también se retorna la solución
 ## Ejemplo
 
 ```javascript
-var newSudoku = sudokuJS.creaSudoku();
-var sudoku = newSudoku.sudokujs;
-var solve = newSudoku.respuesta;
+var newSudoku = sudokuJS.creaSudoku(), 
+    sudoku    = newSudoku.sudokujs, 
+    respuesta = newSudoku.respuesta;
 ```
 La propiedad ```respuesta``` retorna una Matriz con la respuesta del Sudoku.
 
