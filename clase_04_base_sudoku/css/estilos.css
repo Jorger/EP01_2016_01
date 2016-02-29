@@ -1,0 +1,68 @@
+
+
+body
+{
+    font-family: Arial;
+}
+
+
+#escenario
+{
+    width: 100%;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+    margin-top: 20px;
+}
+
+.interno
+{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: rgba(221, 221, 221, 0.16);
+    color: gray;
+}
+
+.numero
+{
+    border: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+    text-align: center;
+    background-color: transparent;
+    outline: none;
+    color: black;
+    font-weight: bold;
+}
+
+.error
+{
+    background: #EF9A9A;
+    color: white;
+}
+
+*:focus {
+    outline: none;
+}
+
+.cuadrante
+{
+    border-collapse: collapse;
+    border: 3px solid black;
+    /*box-shadow: 1px 1px 100px gray;*/
+}
+
+button
+{
+    margin-top: 15px;
+    font-size: 1em;
+    height: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+}
