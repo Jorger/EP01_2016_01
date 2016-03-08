@@ -1,0 +1,24 @@
+#titulo
+{
+    font-family: Arial;
+}
+
+#puzzle
+{
+    margin: 0 auto;
+    background: rgba(14, 14, 14, 0.68);
+    border: 3px solid white;
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.9);
+}
+
+.niveles
+{
+    height: auto;
+    margin: 0 auto;
+}
+
+#botones
+{
+    padding-top: 30px;
+    text-align: center;
+}
