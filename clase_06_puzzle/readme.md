@@ -1,48 +1,69 @@
-# Librería SudokuJS
+# Actividad Puzzle
 
-Librería que permite la creación de los elementos bases (semillas) de un Sudoku
+Actidad que tiene como fin el aprendizaje de ES6.
 
-# Uso.
+# Prerrequisitos
 
-Para hacer uso de la librería, se deberá asociar el archivo .js al documento html que hará uso de la misma.
+Instalación de NodeJS y de browserify y watchify globalmente.
 
-* [sudokujs.min.js]: Para despliegue
-* [sudokujs.js]: Para desarrollo
-
-```html
-<script src = "js/sudokujs.min.js"></script>
+```
+npm install -g browserify
+npm install -g watchify
 ```
 
-Para hacer el llamado a un nuevo sudoku se invocará el método ```creaSudoku()``` el cual espare dos parámetros:
+Instalación de los paquetes de desarrollo localmente que están ubicados en el archivo package.json
 
-* **Tamaño del sudoku:** Mínimo 2, Máximo 5.
-* **Dificultad:** 1 - Fácil, 2 - Medio, 3 - Difícil.
+```
+npm install
+```
+
+Una vez instalada las dependencias, para la ejecución/conversión se deberá ejecutar el comando:
+
+```
+npm run watch
+```
+
+# Objetivo.
+
+Se entrega una base de la actidad, en la cual se deberá validar el movimiento de las piezas del Puzzle, entre las partes que se entrega está el relacionado a determinar los elementos vaciós que estén cercanos a la pieza seleccionada:
+
+![Ocupado](https://dl.dropboxusercontent.com/u/181689/puzzle/puzzleOcupado.gif)
+
+Al finalizar la validación el juego deberá realizar el cambio de pieza presionada al espacio disponible.
+
+![Finaliza](https://dl.dropboxusercontent.com/u/181689/puzzle/PuzzleTerminado.gif)
+
+# Ayudas.
+
+Para el cambio de estilos de un elemento a otro, se ha separado en una función, la cual recibe la posición de corte que tendrá la imagen y además si está estará ocupada.
 
 ```javascript
-creaSudoku(dimension, nivel);
+let estiloCelda = ({fila, columna, ocupado}) =>
+{
+    //margin-right: 5px;
+    let style = `width: ${valorCorte}px;
+                 height: ${valorCorte}px;
+                 display: inline-block;
+                 border: 1px solid black;`;
+    let clase = "";
+    if(ocupado)
+    {
+        style += `background-position: -${fila}px -${columna}px;
+                  cursor: pointer;
+                  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.42);`;
+        clase = "class = 'fondo'";
+    }
+    return {style, clase};
+};
 ```
 
-Si no se envía parámetro alguno, se creará un sudoku de 3x3 con una dificultad Fácil (1)
+Debido a que no se está haciendo uso de librerías, pararealizar el cambio de estilos de un elemento se puede hacer uso de la función ```setAttribute()```
 
-Además de entregar el sudoku con sus semillas, también se retorna la solución del mismo.
+Para agregar una clase puede hacer uso de la función ```classList.add("clase");``` para adicionar una clase y ```classList.remove("clase")``` para eliminarla, más información en el siguiente enlace: https://developer.mozilla.org/es/docs/Web/API/Element/classList
 
-## Ejemplo
+Al aplicar estas funciones el cambio de clase y estilos se ve de la siguiente forma:
 
-```javascript
-var newSudoku = sudokuJS.creaSudoku(), 
-    sudoku    = newSudoku.sudokujs, 
-    respuesta = newSudoku.respuesta;
-```
-La propiedad ```respuesta``` retorna una Matriz con la respuesta del Sudoku.
-
-La librería ha sido utilizada para la creación del juego.
-
-![Adivinando](https://dl.dropboxusercontent.com/u/181689/sudokugif.gif)
-
-### Enlaces.
-
-* http://blog.forret.com/2006/08/14/a-sudoku-challenge-generator/
-* http://stackoverflow.com/questions/6924216/how-to-generate-sudoku-boards-with-unique-solutions
+![Estilos](https://dl.dropboxusercontent.com/u/181689/puzzle/PuzzleStyle.gif)
 
 
 ### Autor
@@ -53,5 +74,3 @@ License
 ----
 MIT
 [@ostjh]:https://twitter.com/ostjh
-[sudokujs.js]:https://github.com/Jorger/EP01_2016_01/blob/master/clase_03_sudokujs/js/sudokujs.js
-[sudokujs.min.js]:https://github.com/Jorger/EP01_2016_01/blob/master/clase_03_sudokujs/js/sudokujs.min.js
