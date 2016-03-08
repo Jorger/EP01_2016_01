@@ -2,6 +2,10 @@
 
 Actidad que tiene como fin el aprendizaje de ES6.
 
+# Vídeo Clase
+
+https://youtu.be/b2lzj4Y8OBo
+
 # Prerrequisitos
 
 Instalación de NodeJS y de browserify y watchify globalmente.
