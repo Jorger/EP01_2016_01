@@ -33,6 +33,29 @@ Validar las operaciones dadas en el juego [Little Professor]
 
 ![Professor](https://dl.dropboxusercontent.com/u/181689/little02.png)
 
+# Tips.
+
+### Para obtener un número aleatorio.
+
+```javascript
+let valorMaximo = 10;
+let aleatorio = Math.floor(Math.random() * valorMaximo);
+```
+Dando valores de ```0 - 9```
+
+### Número aleatorio en un rango específico.
+
+```javascript
+let aleatorio = Math.floor(Math.random()*(max-min+1)+min);
+```
+
+Siendo ```max``` el número máximo del rango y ```min``` el mínimo: ejemplo:
+
+```javascript
+let aleatorio = Math.floor(Math.random()*(20-10+1)+10);
+```
+Arrojando valores de ```10 - 20``` el valor es incluyente por la suma que se le hace.
+
 ### Autor
 Jorge Rubaino
 
