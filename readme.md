@@ -30,6 +30,19 @@ https://youtu.be/FnxS8_qXrgI
 
 https://youtu.be/b2lzj4Y8OBo
 
+#### 28 de Marzo de 2016
+
+https://youtu.be/9bLSE2V9zek
+
+#### 04 de Abril de 2016
+
+https://youtu.be/bmpxnNC-H34
+
+#### 11 de Abril de 2016
+
+https://youtu.be/nPIoRNQ9-aA
+
+
 ### Autor
 Jorge Rubaino
 
