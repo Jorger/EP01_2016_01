@@ -4,7 +4,7 @@ A continuación se listan tres retos relacionados al uso de [CANVAS]
 
 ## Logo Mercedes Benz
 
-Se entrega base del código, el estudiante deberá completar el logo de [Mercedes Benz], en el [código] entregado se entregan tips para el desarrollo de la actividad.
+Se entrega base del código, el estudiante deberá completar el logo de [Mercedes Benz], en el [código] entregado se dan tips para el desarrollo de la actividad.
 
 #### Ejemplo final 
 
@@ -12,8 +12,7 @@ Se entrega base del código, el estudiante deberá completar el logo de [Mercede
 
 ## Logo Altria.
 
-El segundo ejercicio, será crear el logo de [Altria], en este caso los colores de cada una de als celdas será aleatoria, por lo que se enctrega la función `randomColor()`para tal fin, 
-leer los tips en el código entregado.
+El segundo ejercicio, será crear el logo de [Altria], en este caso los colores de cada una de las celdas será aleatoria, por lo que se enctrega la función `randomColor()`para tal fin, leer los [tips] en el código entregado.
 
 #### Ejemplo final 
 
@@ -23,8 +22,7 @@ _Los colores pueden cambiar, debido a que son aleatorios_
 
 ## Bandera de Puerto Rico.
 
-El tercer ejercicio, tiene como fin crear la bandera de Puerto Rico, en este caso particular se deberán crear las franjas que componen la bandera, 
-leer [instrucciones] en el código.
+El tercer ejercicio, tiene como fin crear la bandera de [Puerto Rico], en este caso particular se deberán crear las franjas que componen la bandera, leer [instrucciones] en el código.
 
 #### Ejemplo Final.
 
@@ -32,14 +30,19 @@ leer [instrucciones] en el código.
 
 ### Autor
 
-Jorge Rubaino [@ostjh]
+Jorge Rubaino 
+[@ostjh]
+
 License
 ----
 MIT
 
-
+[@ostjh]:https://twitter.com/ostjh
 [Mercedes Benz]:http://www.logodesignlove.com/images/evolution/mercedes-benz-symbol.jpg
 [CANVAS]:https://developer.mozilla.org/es/docs/Web/Guide/HTML/Canvas_tutorial
 [código]:https://github.com/Jorger/EP01_2016_01/blob/master/clase_11_retos_canvas/logo_mercedes/js/script.js#L30
 [Altria]:https://pbs.twimg.com/profile_images/1282715496/AG_pos_fullws_nor_a_400x400.jpg
+[tips]:https://github.com/Jorger/EP01_2016_01/blob/master/clase_11_retos_canvas/logo_altria/js/script.js#L6
+[Puerto Rico]:http://photos1.blogger.com/blogger/8161/1649/1600/bb1.jpg
 [instrucciones]:https://github.com/Jorger/EP01_2016_01/blob/master/clase_11_retos_canvas/bandera/js/script.js#L7
+
